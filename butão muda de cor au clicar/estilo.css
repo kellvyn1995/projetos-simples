@@ -1,0 +1,32 @@
+
+.nivel{
+    background-color: rgb(104, 102, 83);
+    height: 30em;
+    width: 30rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn_verde{
+    background-color: rgb(39, 185, 51);
+    font-size: 1.3rem;
+    height: 8rem;
+    width: 8rem;
+    border: 0;
+    border-radius: 1rem;
+    color: #ffffffff;
+    margin: 0.5rem;
+    block-size: 8rem;
+}
+
+.btn_vermelho{
+    background-color: rgb(185, 44, 39);
+    font-size: 1.3rem;
+    height: 8rem;
+    width: 8rem;
+    border: 0;
+    border-radius: 1rem;
+    color: #ffffffff;
+    margin: 0.5rem;
+    block-size: 8rem;
+}
