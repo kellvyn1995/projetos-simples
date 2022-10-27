@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/marvel.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="../js/map.js"></script>
+    <title>API MARVEL</title>
+</head>
+<body>
+    <div class="bloco_iron">
+        <img class="img_iron" src="../img/iron.webp" alt="">
+        <div class="pesquisar">
+            <input class="input_iron" id="input_iron" type="text" placeholder="">
+            <button class="btn_busca" onclick="busca_hq()">Busca</button>
+        </div>
+        <button class="esfera"></button>
+    </div>
+
+    <div class="totalCard" id="totalCard"></div>
+
+    <div class="modal_envio" id="modal_envio">
+        <button class="btn" onclick="ocultaModalMap()">Fechar</button>
+        <p id="demo"></p>
+        <div id="mapholder"></div>
+        <label class="modal_samp">Enviaremos o HQ para sua localização</label>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Informe aqui detalhes sobre seu endereço de entrega"></textarea>
+        <button class="btn" onclick="ocultaModalMap()">OK</button>
+    </div>
+</body>
+</html>
