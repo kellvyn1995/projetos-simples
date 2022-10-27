@@ -25,7 +25,7 @@ function criarCard(hqs){
     totalCard.innerHTML = hqsHTML.join(" ");
 }
 
-fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStemp}&apikey=958280368eeee368391edbda2073737f&hash=${md5Hash}&hasDigitalIssue=true&limit=10`)
+fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStemp}&apikey=958280368eeee368391edbda2073737f&hash=${md5Hash}&hasDigitalIssue=true&limit=100`)
 .then(response => response.json())
 .then(response => {
     const hqs = response.data.results;
@@ -46,7 +46,7 @@ function ocultaModalMap() {
 }
 function busca_hq() {
     let busca_hq = document.getElementById('input_iron').value;
-    fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStemp}&apikey=958280368eeee368391edbda2073737f&hash=${md5Hash}&hasDigitalIssue=true&titleStartsWith=${busca_hq}&limit=20`)
+    fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStemp}&apikey=958280368eeee368391edbda2073737f&hash=${md5Hash}&hasDigitalIssue=true&titleStartsWith=${busca_hq}&limit=10`)
         .then(response => response.json())
         .then(response => {
         const hqs = response.data.results;
